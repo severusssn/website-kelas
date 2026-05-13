@@ -4,40 +4,15 @@ html{
     padding: 0;
 }
 
-/* HEADER */
-.header {
-    background-color: white;
-    padding: 15px;
-}
-
-/* ISI HEADER */
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-/* LOGO */
-.logo {
-    width: 70px;
-    height: 70px;
-}
-
-/* TEKS HEADER */
-.header-text h1 {
-    margin: 0;
-    font-size: 26px;
-}
-
-.header-text p {
-    margin: 0;
-    color: #555;
-}
-
 body {
+
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, #4facfe, #00f2fe);
+
+    background-color: #f5f7fa;
+
+    margin: 0;
+
+    padding: 0;
 }
 
 .header {
@@ -60,9 +35,14 @@ body {
 
 .ul-navbar {
     display: flex;
+
     height: 100px;
-    justify-content: center;
+
+    justify-content: flex-start;
+
     align-items: center;
+
+    padding-left: 30px;
 }
 
 .li-navbar {
@@ -119,20 +99,6 @@ body {
 .img-content {
     width: 50%;
     height: 50%;
-}
-
-.container-footer {
-    height: 10vh;
-    background-color: #0d6efd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.h1-footer {
-    font-size : 40px;
-    color: white;
-    
 }
 
 .judul-tabel {
@@ -232,17 +198,20 @@ body {
 
 .info-card {
     background-color: white;
-    padding: 20px;
-    margin-bottom: 25px;
 
-    border-radius: 12px;
+    width: 60%;
 
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    margin: 0 auto 40px auto;
+
+    padding: 25px;
 
     text-align: center;
 
-    width: 60%;
+    border-radius: 15px;
+
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
 }
+
 /* GALERI CONTAINER */
 .gallery-container {
     display: flex;
@@ -252,7 +221,7 @@ body {
 }
 
 /* CARD GALERI */
-.gallery-item {
+.gallery-card img {
     background-color: white;
     width: 250px;
 
@@ -290,4 +259,429 @@ body {
 /* HOVER */
 .gallery-item:hover {
     transform: translateY(-10px);
+}
+
+/* HERO */
+.hero {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 50px;
+
+    background-color: #f8f9fa;
+
+    flex-wrap: wrap;
+}
+
+/* TEXT HERO */
+.hero-kiri {
+    width: 45%;
+}
+
+.hero-kiri h1 {
+    font-size: 45px;
+
+    color: #0d47a1;
+
+    margin-bottom: 20px;
+}
+
+.hero-kiri p {
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn-hero {
+    background-color: #0d6efd;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+}
+
+/* GAMBAR */
+.hero-kanan {
+    width: 45%;
+}
+
+.img-hero {
+    width: 100%;
+
+    border-radius: 15px;
+}
+
+/* NAVBAR MODERN */
+.navbar-modern {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 40px;
+
+    background-color: white;
+
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+/* LOGO */
+.navbar-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.logo-navbar {
+
+    width: 60px;
+
+    height: 60px;
+}
+
+.navbar-logo h2 {
+
+    margin: 0;
+
+    color: #0d47a1;
+}
+
+.navbar-logo p {
+
+    margin: 0;
+
+    color: gray;
+
+    font-size: 14px;
+}
+
+/* MENU */
+.navbar-menu {
+
+    display: flex;
+
+    gap: 30px;
+
+    list-style: none;
+}
+
+.navbar-menu a {
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+/* HOVER MENU */
+.navbar-menu a:hover {
+
+    color: #0d6efd;
+}
+
+/* BUTTON */
+.btn-navbar {
+
+    background-color: #0d6efd;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-navbar:hover {
+
+    background-color: #084298;
+}
+
+@media (max-width: 768px) {
+
+    .navbar-modern {
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .navbar-menu {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
+
+/* ================= HEADER MODERN ================= */
+
+.top-header {
+
+    background-color: #0d47a1;
+
+    color: white;
+
+    padding: 10px 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 14px;
+}
+
+/* ================= FOOTER MODERN ================= */
+
+.footer-modern {
+
+    background-color: #0d47a1;
+
+    color: white;
+
+    margin-top: 50px;
+}
+
+/* ISI FOOTER */
+.footer-content {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 30px;
+
+    padding: 50px;
+}
+
+/* SECTION */
+.footer-section {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+/* JUDUL */
+.footer-section h2,
+.footer-section h3 {
+
+    margin-bottom: 15px;
+}
+
+/* LINK */
+.footer-section a {
+
+    text-decoration: none;
+
+    color: white;
+
+    margin-bottom: 10px;
+
+    transition: 0.3s;
+}
+
+/* HOVER LINK */
+.footer-section a:hover {
+
+    color: #90caf9;
+}
+
+/* COPYRIGHT */
+.footer-bottom {
+
+    text-align: center;
+
+    padding: 20px;
+
+    background-color: #08306b;
+
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    .top-header {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+    }
+
+    .footer-content {
+
+        text-align: center;
+    }
+
+}
+
+.content-box {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+
+    width: 90%;
+
+    margin: 40px auto;
+}
+
+/* VIDEO GALERI */
+.video-gallery {
+
+    width: 100%;
+
+    border-radius: 15px;
+
+    margin-bottom: 15px;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+
+    margin-top: 40px;
+}
+
+/* CARD */
+.gallery-card {
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+
+    text-align: center;
+}
+
+/* HOVER */
+.gallery-card:hover {
+
+    transform: translateY(-10px);
+}
+
+/* GAMBAR */
+.gallery-img {
+
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+}
+
+/* VIDEO */
+.gallery-video {
+
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+}
+
+/* JUDUL */
+.gallery-card h3 {
+
+    padding: 20px;
+
+    font-size: 22px;
+
+    color: #0d47a1;
+}
+
+/* ================= VIDEO BESAR ================= */
+
+.video-card {
+
+    margin-top: 50px;
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+
+    text-align: center;
+}
+
+/* VIDEO */
+.video-besar {
+
+    width: 100%;
+
+    max-height: 600px;
+
+    border-radius: 15px;
+
+    object-fit: cover;
+}
+
+/* JUDUL VIDEO */
+.video-card h2 {
+
+    margin-top: 20px;
+
+    color: #0d47a1;
+
+    font-size: 32px;
+}
+
+/* DESKRIPSI */
+.video-card p {
+
+    color: #555;
+
+    margin-top: 10px;
+
+    font-size: 18px;
 }
