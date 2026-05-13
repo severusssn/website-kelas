@@ -685,3 +685,105 @@ body {
 
     font-size: 18px;
 }
+
+/* ================= RESPONSIVE MOBILE ================= */
+
+@media screen and (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+
+        flex-direction: column;
+
+        padding: 20px;
+    }
+
+    .nav-menu {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        margin-top: 20px;
+    }
+
+    /* HERO */
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 20px;
+    }
+
+    .hero-text h1 {
+
+        font-size: 40px;
+    }
+
+    .hero-text p {
+
+        font-size: 18px;
+    }
+
+    .hero-image img {
+
+        width: 100%;
+
+        margin-top: 30px;
+    }
+
+    /* CONTENT */
+    .content-box {
+
+        width: 95%;
+
+        padding: 20px;
+    }
+
+    /* CARD ANGGOTA */
+    .anggota-container {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .anggota-card {
+
+        width: 90%;
+    }
+
+    /* GALLERY */
+    .gallery-container {
+
+        grid-template-columns: 1fr;
+    }
+
+    /* VIDEO */
+    .video-besar {
+
+        max-height: 300px;
+    }
+
+    /* TABEL */
+    .table-wrapper {
+
+        overflow-x: auto;
+    }
+
+    .table-mahasiswa {
+
+        min-width: 800px;
+    }
+
+    /* FOOTER */
+    .footer-content {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+}
