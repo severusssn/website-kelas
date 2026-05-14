@@ -748,9 +748,16 @@ body {
     /* NAVBAR */
 
     .navbar-modern{
-        flex-direction: column;
-        padding: 15px;
-        gap: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        position: relative;
+    }
+
+    .navbar-menu.active{
+        display: flex;
     }
 
     .navbar {
@@ -766,30 +773,47 @@ body {
     }
     
     /* LOGO */
-    .navbar-logo{
-        flex-direction: column;
-        text-align: center;
-    }
+     .navbar-logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+     }
 
     .logo-navbar{
         width: 70px;
         height: 70px;   
     }
 
-    .navbar-logo h2{
-        font-size: 20px;
+   .navbar-logo h2{
+        font-size: 18px;
+        margin: 0;
     }
 
-    .navbar-logo p{
-        font-size: 14px;
+      .navbar-logo p{
+        font-size: 13px;
+        margin: 0;
+    }
+
+
+    .logo-navbar{
+        width: 55px;
+        height: 55px;
     }
 
     /* MENU */
-    .navbar-menu{
+     .navbar-menu{
+        display: none;
         flex-direction: column;
-        gap: 15px;
-        padding: 0;
-        margin: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 20px 0;
+        text-align: center;
+        gap: 20px;
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
     }
 
     .navbar-menu li{
@@ -904,4 +928,10 @@ body {
         padding: 30px 20px;
     }
 
-}
+        /* HAMBURGER */
+    .hamburger{
+        display: block;
+        font-size: 35px;
+        cursor: pointer;
+        color: #0d47a1;
+    }
