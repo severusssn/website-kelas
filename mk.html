@@ -11,26 +11,20 @@
 
    <!-- HEADER MODERN -->
 <div class="top-header">
-
     <div class="top-header-kiri">
-
         <p>
             📍 03SKMP001 | 🌐 Sistem Komputer
         </p>
-
     </div>
-
     <div class="top-header-kanan">
-
         <p>
             📧 sistemkomputer@gmail.com
         </p>
-
     </div>
 
 </div>
 
-    <!-- NAVBAR MODERN -->
+<!-- NAVBAR MODERN -->
 <div class="navbar-modern">
 
     <!-- LOGO -->
@@ -40,45 +34,38 @@
 
         <div>
             <h2>SISTEM KOMPUTER</h2>
-            <p>Kelas Modern & Kreatif</p>
+            <p>Kelas Modern</p>
         </div>
 
     </div>
 
+    <!-- TOMBOL HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">
+        ☰
+    </div>
+
     <!-- MENU -->
-    <ul class="navbar-menu">
+    <ul class="navbar-menu" id="navbarMenu">
 
+        <li><a href="index.html">BERANDA</a></li>
+        <li><a href="about.html">ANGGOTA</a></li>
+        <li><a href="mk.html">MATA KULIAH</a></li>
+        <li><a href="gallery.html">GALERI</a></li>
         <li>
-            <a href="index.html">BERANDA</a>
-        </li>
-
-        <li>
-            <a href="about.html">ANGGOTA</a>
-        </li>
-
-        <li>
-            <a href="mk.html">MATA KULIAH</a>
-        </li>
-
-        <li>
-            <a href="gallery.html">GALERI</a>
+            <a href="https://www.instagram.com/siskom001.25/" class="btn-navbar">
+                HUBUNGI
+            </a>
         </li>
 
     </ul>
 
-    <!-- BUTTON -->
-    <a href="https://www.instagram.com/siskom001.25/" class="btn-navbar">
-        HUBUNGI
-    </a>
-
 </div>
-
 <div class="content-box">
 
     <h2 class="judul-tabel">
         DAFTAR MATA KULIAH
     </h2>
-
+    <div class="table-scroll"></div>
     <table class="table-mahasiswa">
 
          <tr>
@@ -244,6 +231,14 @@
     </div>
 
 </div>
+<!-- JAVASCRIPT HAMBURGER -->
+<script>
+
+function toggleMenu() {
+    document.getElementById("navbarMenu").classList.toggle("active");
+}
+
+</script>
 
 </body>
 </html>

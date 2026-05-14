@@ -30,7 +30,7 @@
 
 </div>
 
-    <!-- NAVBAR MODERN -->
+ <!-- NAVBAR MODERN -->
 <div class="navbar-modern">
 
     <!-- LOGO -->
@@ -40,89 +40,84 @@
 
         <div>
             <h2>SISTEM KOMPUTER</h2>
-            <p>Kelas Modern & Kreatif</p>
+            <p>Kelas Modern</p>
         </div>
 
     </div>
 
+    <!-- TOMBOL HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">
+        ☰
+    </div>
+
     <!-- MENU -->
-    <ul class="navbar-menu">
+    <ul class="navbar-menu" id="navbarMenu">
 
+        <li><a href="index.html">BERANDA</a></li>
+        <li><a href="about.html">ANGGOTA</a></li>
+        <li><a href="mk.html">MATA KULIAH</a></li>
+        <li><a href="gallery.html">GALERI</a></li>
         <li>
-            <a href="index.html">BERANDA</a>
-        </li>
-
-        <li>
-            <a href="about.html">ANGGOTA</a>
-        </li>
-
-        <li>
-            <a href="mk.html">MATA KULIAH</a>
-        </li>
-
-        <li>
-            <a href="gallery.html">GALERI</a>
+            <a href="https://www.instagram.com/siskom001.25/" class="btn-navbar">
+                HUBUNGI
+            </a>
         </li>
 
     </ul>
 
-    <!-- BUTTON -->
-    <a href="https://www.instagram.com/siskom001.25/" class="btn-navbar">
-        HUBUNGI
-    </a>
-
 </div>
+
     <!-- CONTENT -->
-    <div class="content-box">
+   <div class="content-box">
 
-    <h2 class="judul-tabel">DOKUMENTASI KELAS</h2>
+    <h1 class="judul-tabel">
+        GALERI KEGIATAN
+    </h1>
 
+    <!-- VIDEO BESAR -->
+    <div class="video-card">
+
+        <video controls class="video-besar">
+
+            <source src="test1.mp4" type="video/mp4">
+
+        </video>
+
+        <h2>Video Dokumentasi Kegiatan</h2>
+
+    </div>
+
+    <!-- FOTO DOKUMENTASI -->
     <div class="gallery-container">
-<div class="gallery-container">
 
-    <!-- FOTO 1 -->
-    <div class="gallery-card">
+        <!-- FOTO 1 -->
+        <div class="gallery-card">
 
-        <img src="s1.jpeg" class="gallery-img">
+            <img src="s1.jpeg" class="gallery-img">
 
-        <h3>Dokumentasi Semester 1</h3>
+            <h3>Dokumentasi Semester 1</h3>
+
+        </div>
+
+        <!-- FOTO 2 -->
+        <div class="gallery-card">
+
+            <img src="s2.jpeg" class="gallery-img">
+
+            <h3>Dokumentasi Semester 2</h3>
+
+        </div>
+
+        <!-- FOTO 3 -->
+        <div class="gallery-card">
+
+            <img src="s3.jpeg" class="gallery-img">
+
+            <h3>Dokumentasi Semester 3</h3>
+
+        </div>
 
     </div>
-
-    <!-- FOTO 2 -->
-    <div class="gallery-card">
-
-        <img src="s2.jpeg" class="gallery-img">
-
-        <h3>Dokumentasi Semester 2</h3>
-
-    </div>
-
-    <!-- FOTO 3 -->
-    <div class="gallery-card">
-
-        <img src="s3.jpeg" class="gallery-img">
-
-        <h3>Dokumentasi Semester 3</h3>
-
-    </div>
-
-    <!-- VIDEO -->
-   <div class="video-card">
-
-    <video controls class="video-besar">
-
-        <source src="test1.mp4" type="video/mp4">
-
-    </video>
-
-    <h2>Video Dokumentasi Kegiatan Kelas</h2>
-
-    <p>
-        Dokumentasi kegiatan mahasiswa Sistem Komputer.
-    </p>
-
-</div>
 
 </div>
    <!-- FOOTER MODERN -->
@@ -177,6 +172,14 @@
     </div>
 
 </div>
+<!-- JAVASCRIPT HAMBURGER -->
+<script>
+
+function toggleMenu() {
+    document.getElementById("navbarMenu").classList.toggle("active");
+}
+
+</script>
 
 </body>
 </html>

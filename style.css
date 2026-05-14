@@ -1,17 +1,18 @@
-*,
-html{
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body {
 
     font-family: Arial, Helvetica, sans-serif;
-
     background-color: #f5f7fa;
-
     margin: 0;
-
     padding: 0;
 }
 
@@ -214,11 +215,14 @@ body {
 
 /* GALERI CONTAINER */
 .gallery-container {
-    display: flex;
-    justify-content: center;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
     gap: 30px;
-    flex-wrap: wrap;
 }
+
 
 /* CARD GALERI */
 .gallery-card img {
@@ -459,11 +463,8 @@ body {
 /* ================= FOOTER MODERN ================= */
 
 .footer-modern {
-
     background-color: #0d47a1;
-
     color: white;
-
     margin-top: 50px;
 }
 
@@ -591,9 +592,9 @@ body {
 
     box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
 
-    transition: 0.3s;
-
     text-align: center;
+
+    transition: 0.3s;
 }
 
 /* HOVER */
@@ -634,9 +635,9 @@ body {
 
 /* ================= VIDEO BESAR ================= */
 
-.video-card {
+    .video-card {
 
-    margin-top: 50px;
+    margin-bottom: 50px;
 
     background-color: white;
 
@@ -647,7 +648,8 @@ body {
     box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
 
     text-align: center;
-}
+    }
+
 
 /* VIDEO */
 .video-besar {
@@ -656,7 +658,7 @@ body {
 
     max-height: 600px;
 
-    border-radius: 15px;
+    border-radius: 20px;
 
     object-fit: cover;
 }
@@ -667,10 +669,7 @@ body {
     margin-top: 20px;
 
     color: #0d47a1;
-
-    font-size: 32px;
 }
-
 /* DESKRIPSI */
 .video-card p {
 
@@ -864,24 +863,72 @@ body {
         margin-top: 30px;
     }
 
+    /* INFORMASI KELOMPOK */
+    .info-kelompok {
+
+        width: 100%;
+
+        padding: 20px;
+
+        font-size: 14px;
+    }
+
     /* CONTENT */
     .content-box {
-        width: 90%;
+        width: 100%;
+        max-width: 100%;
         padding: 20px;
+        overflow-x: auto;
     }
 
     /* CARD ANGGOTA */
     .anggota-container {
 
+        display: flex;
+
         flex-direction: column;
 
         align-items: center;
+
+        gap: 25px;
     }
 
+    .anggota-card:hover {
+
+    transform: translateY(-5px);
+    }
+    
     .anggota-card {
-
         width: 90%;
+        padding: 20px;
     }
+
+    .anggota-card img {
+
+        width: 120px;
+
+        height: 120px;
+
+        object-fit: cover;
+    }
+
+     .anggota-card h2 {
+
+        font-size: 22px;
+    }
+
+    .anggota-card p {
+
+        font-size: 15px;
+    }
+
+    /* JUDUL */
+    .judul-tabel {
+        width: 100%;
+        font-size: 22px;
+    }
+
+
 
     .card-container{
         flex-direction: column;
@@ -907,19 +954,27 @@ body {
     /* VIDEO */
     .video-besar {
 
-        max-height: 300px;
+        max-height: 250px;
     }
 
     /* TABEL */
-    .table-wrapper {
-
+    .table-wrapper{
+        width: 100%;
         overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .table-mahasiswa {
-
-        min-width: 800px;
+        min-width: 1000px;
+        border-collapse: collapse;
     }
+
+    .table-scroll{
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
 
     /* FOOTER */
     .footer-content {
