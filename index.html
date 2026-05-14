@@ -31,7 +31,7 @@
 
 </div>
 
-        <!-- NAVBAR MODERN -->
+<!-- NAVBAR MODERN -->
 <div class="navbar-modern">
 
     <!-- LOGO -->
@@ -46,31 +46,29 @@
 
     </div>
 
+    <!-- TOMBOL HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">
+        ☰
+    </div>
+
     <!-- MENU -->
-    <ul class="navbar-menu">
+    <ul class="navbar-menu" id="navbarMenu">
+
+        <li><a href="index.html">BERANDA</a></li>
+
+        <li><a href="about.html">ANGGOTA</a></li>
+
+        <li><a href="mk.html">MATA KULIAH</a></li>
+
+        <li><a href="gallery.html">GALERI</a></li>
 
         <li>
-            <a href="index.html">BERANDA</a>
-        </li>
-
-        <li>
-            <a href="about.html">ANGGOTA</a>
-        </li>
-
-        <li>
-            <a href="mk.html">MATA KULIAH</a>
-        </li>
-
-        <li>
-            <a href="gallery.html">GALERI</a>
+            <a href="https://www.instagram.com/siskom001.25/" class="btn-navbar">
+                HUBUNGI
+            </a>
         </li>
 
     </ul>
-
-    <!-- BUTTON -->
-    <a href="https://www.instagram.com/siskom001.25/" class="btn-navbar">
-        HUBUNGI
-    </a>
 
 </div>
         <!-- NAVIGATION BAR SELESAI -->
@@ -145,15 +143,27 @@
 
     </div>
 
-    <!-- COPYRIGHT -->
-    <div class="footer-bottom">
+   <!-- COPYRIGHT -->
+<div class="footer-bottom">
 
-        <p>
-            © 2026 Sistem Komputer | All Rights Reserved
-        </p>
-
-    </div>
+    <p>
+        © 2026 Sistem Komputer | All Rights Reserved
+    </p>
 
 </div>
+
+</div>
+
+<!-- JAVASCRIPT HAMBURGER -->
+<script>
+
+function toggleMenu() {
+    document.getElementById("navbarMenu").classList.toggle("active");
+}
+
+</script>
+
+</body>
+</html>
     </body>
 </html>
